@@ -42,5 +42,15 @@ Aqui temos um exemplo de conexão estabelecida que ao sinal do computador client
     ...
 
 ---
-Primeiro quero exemplificar o que de fato ocorre quando acessamos uma página da Web.
-![Exemplo visual do funcionamento do protocolo de DNS](/imagem/git.png)
+Esta última parte deste documento quero dedicar ao **Git (GitHub)**.
+![Exemplo visual de uma "árvore" em Git](/imagem/git.png)
+Git é uma ferramenta fantástica que permite trazer um histórico completo de um projeto para seu trabalho.  
+1. Tudo começa com uma pasta, nós criamos uma pasta e digitamos ```git init```.
+2. Após isso a pasta já é um repositório! Mas ainda sem nenhum commit (histórico). Para fazer nosso primeiro commit precisamos de um arquivo, para tal, vamos criar um txt e escrever dentro dele... "Hello World!" - Para tal podemos fazer ```echo "Hello World!" > text.txt```.
+3.  Agora podemos fazer nosso primeiro commit, antes só precisamos dizer o que deve ser "guardado" nesse commit. Para fazer isso escreva ```git add text.txt```, isso fará que o arquivo 'text.txt' vá para Staging (Index).
+4. Uma vez que o arquivo já está em Staging, é somente usar ```git commit -m "Primeiro commit"``` para fazer seu primeiro commit!
+5. E agora, como vejo isso online? Para isso devemos usar o Github (ou outra plataforma de repositórios remotos). O passo a passo para vincular um repositório local à um remoto é extenso e eu não vou cobrir totalmente aqui... Mas caso queira se aprofundar, deixarei alguns temas que se você pesquisar certamente encontrará "seu caminho":
+    - SSH Key | GitHub;
+    - Vincular um reposítório local à um remoto | git remote;
+    - Testar conexão SSH | git@github.com;
+    - Set-upstream | git push.
