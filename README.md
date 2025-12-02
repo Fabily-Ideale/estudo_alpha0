@@ -1,8 +1,8 @@
-O que eu aprendi até o momento
+Aprendizados
 ===
 >Autor: Fábily Ideale
 
-Começarei com o tema de redes
+REDES
 ---
 Quero exemplificar o que de fato ocorre quando acessamos uma página da Web. Claro que não consigo citar tudo que de fato ocorre em detalhes porque temos muito material sobre "Redes de Computadores" - Mesmo computação sendo uma ciência nova e ainda em desoberta.
 
@@ -19,7 +19,7 @@ Obs.: São usados algoritmos complexos que juntos levam à criação de informa�
 Porém ao requisitarmos ao PoP a página, ele observa em seu cache interno e percebe que não possui a página e inicia outra conexão P2P até ao servidor original. Essa conexão é mais otimizada do que se fôssemos fazê-la, pois já estão definidas "rotas ótimas" do PoP (da CDN) até o servidor original.  
 Após obter a página e armazená-la (baseado em seu TTL), nós recebemos o que requisitamos em nossas máquinas, porém, vale ressaltar que um servidor DNS não armazena o serviço por completo - Afinal de contas ele não conseguiria processar os serviços de tudo que ele possui em cache - e sim o conteúdo estático.
 
-Agora temos uma conexão estabelecida com o servidor (mais à frente detalharemos o processo de conexão inicial). Chegamos ao passo da **Internet!**
+Agora temos uma conexão estabelecida com o servidor, chegamos ao passo da **Internet!**
 ![Exemplo visual do funcionamento da internet sob uma conexão estabelecida](/imagem/internet.png)
 Aqui temos um exemplo de conexão estabelecida que ao sinal do computador cliente, a requisição feita vai até o PoP e este serve algum serviço que esteja em seu "alcance" ou repassa à requisição ao servidor original se for um serviço que necessita de tal.
 
@@ -41,9 +41,10 @@ Aqui temos um exemplo de conexão estabelecida que ao sinal do computador client
     - DDoS: Ataque em que várias requisições simultâneas são feitas à um servidor de serviços.  
     ...
 
+GIT(HUB)
 ---
 Esta última parte deste documento quero dedicar ao **Git (GitHub)**.
-![Exemplo visual de uma "árvore" em Git](/imagem/git.png)
+![Exemplo visual de uma "árvore" em Git](/imagem/git.png)  
 Git é uma ferramenta fantástica que permite trazer um histórico completo de um projeto para seu trabalho.  
 1. Tudo começa com uma pasta, nós criamos uma pasta e digitamos ```git init```.
 2. Após isso a pasta já é um repositório! Mas ainda sem nenhum commit (histórico). Para fazer nosso primeiro commit precisamos de um arquivo, para tal, vamos criar um txt e escrever dentro dele... "Hello World!" - Para tal podemos fazer ```echo "Hello World!" > text.txt```.
