@@ -4,9 +4,15 @@ O que eu aprendi até o momento
 
 Começarei com o tema de redes
 ---
-Primeiro quero exemplificar o que de fato ocorre quando acessamos uma página da Web.
+Quero exemplificar o que de fato ocorre quando acessamos uma página da Web. Claro que não consigo citar tudo que de fato ocorre em detalhes porque temos muito material sobre "Redes de Computadores" - Mesmo computação sendo uma ciência nova e ainda em desoberta.
+
+À começar, vamos exemplificar o **DNS**:
 ![Exemplo visual do funcionamento do protocolo de DNS](/imagem/dns.png)
-Primeiro quero exemplificar o que de fato ocorre quando acessamos uma página da Web.
+Tudo começa quando digitamos um endereço (URL) no navegador, no nosso exemplo utilizamos o site "example.com" - Que inclusive existe - para um melhor entedimento.  
+Ao digitar "example.com" o navegador "pede" ao OS para fazer uma requisição DNS ao roteador através do protocolo UDP e então inicia-se o processo de resolução de DNS.  
+O roteador (desde que esteja utilizando a tecnologia) "assume" a requisição através do NAT e olha para a URL digitada. No nosso caso, ele a "divide" em 3 partes separadas, "." (root), "com" e "example". Inicia-se um processo iterativo em que o DNS resolver (seja ele do ISP ou algum interno) "pergunta" aos servidores DNS até encontrar o endereço final - Isso ocorre nessa ordem respectivamente: Root DNS, ccTLD DNS (não se aplica à nossa URL), TLD e Servidor autoritativo.
+
+Então o que ocorre depois?! Aí entra o servidor que oferece o serviço diretamente ou, conforme ilustramos abaixo, um sistema **CDN com PoPs** espalhados por uma área geográfica.
 ![Exemplo visual do funcionamento do protocolo de DNS](/imagem/cdn.png)
 Primeiro quero exemplificar o que de fato ocorre quando acessamos uma página da Web.
 ![Exemplo visual do funcionamento do protocolo de DNS](/imagem/internet.png)
